@@ -21,6 +21,10 @@
 .border-scroll {
     border: 1px solid black;
 }
+
+.padding-button {
+    padding-bottom: 15px;
+}
 body {
     background-image: url("62848.jpg");
     background-repeat: no-repeat;
