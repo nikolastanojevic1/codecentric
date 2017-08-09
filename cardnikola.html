@@ -5,58 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="bootstrap.min.js" type="text/javascript"></script>
+
     <title>Nikola Lisicic</title>
 </head>
 
 <body>
-    <div class="container-fluid text-white">
-        <div class="text-center bottom-padding">
+    <div class="container-fluid ">
+        <div class="text-center bottom-padding text-white">
             <h1>CODECENTRIC PEOPLE</h1>
         </div>
 
         <div class="row">
             <div class="col-xs-3 col-xs-offset-3 padding-button">
-               <a href="index.html" class="btn btn-default glyphicon glyphicon-arrow-left" aria-hidden="true" role="button" title="Back"></a>
+                <a href="index.html" class="btn btn-default glyphicon glyphicon-arrow-left" aria-hidden="true" role="button" title="Back"></a>
             </div>
         </div>
-    
+
 
         <div class="row">
             <div class="col-xs-3 col-xs-offset-3 text-center">
-                
+
                 <div class="card">
                     <img class="card-img-top" src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/581677_10200641635277471_784585904_n.jpg?oh=f88630ae7b2eab89a1084b852b771b64&oe=59FB8CFE">
                     <div class="card-block">
-                        <h4 class="card-title">Nikola Lisicic</h4>
-                        
+                        <h4 class="card-title text-white">Nikola Lisicic</h4>
+
                     </div>
                 </div>
             </div>
 
+
             <div class="col-xs-3">
-                <table class="table table-hover text-white">
-                    <thead>
-                        <tr>
-                            <th>Personal Details</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Nikola</td>
-                        </tr>
-                        <tr>
-                            <td>Lisicic</td>
-                        </tr>
-                        <tr>
-                            <td>27</td>
-                        </tr>
-                        <tr class="trborder">
-                            <td>Project</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Personal Details
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <table class="table">
+                                    <tbody>
+
+
+                                        <tr>
+                                            <th>Firstname:</th>
+                                            <td>Nikola</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Lastname:</th>
+                                            <td>Lisicic</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Age:</th>
+                                            <td>27</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+          Project
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                Project asfafafafafaf.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>    
+        </div>
     </div>
 </body>
 
